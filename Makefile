@@ -3,6 +3,6 @@ build-image:
 volume:
 	@ docker volume create pg_tendencia_data
 deploy:
-	@ docker stack deploy --with-registry-auth -c devops/stack.yml integradordb
+	@ docker stack deploy --with-registry-auth -c devops/stack.yml integrador
 rm:
-	@ docker stack rm integradordb
+	@ docker stack rm integrador
