@@ -15,7 +15,7 @@
       image: postgres:15.0-bullseye
       environment:
       - TZ=America/Guayaquil
-      - POSTGRES_DB=integradordb
+      - POSTGRES_DB=integrador
       - POSTGRES_PASSWORD=anthony
       - POSTGRES_USER=postgres
       - PGDATA=/var/lib/postgresql/data/pgdata
