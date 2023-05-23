@@ -3,6 +3,6 @@ build-image:
 volume:
 	@ docker volume create integrador3
 deploy:
-	@ docker stack deploy --with-registry-auth -c devops/stack.yml integrador3
+	@ docker stack deploy --with-registry-auth -c devops/stack.yml backend
 rm:
-	@ docker stack rm integrador3
+	@ docker stack rm backend
