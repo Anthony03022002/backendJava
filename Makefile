@@ -3,6 +3,6 @@ build-image:
 volume:
 	@ docker volume create pg_integrador3_data
 deploy:
-	@ docker stack deploy --with-registry-auth -c devops/stack.yml backend
+	@ docker stack deploy --with-registry-auth -c devops/stack.yml backendjava
 rm:
-	@ docker stack rm backend
+	@ docker stack rm backendjava
