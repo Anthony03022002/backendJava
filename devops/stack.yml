@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    image: backendjava:1
+    image: grupo3java:1
     ports:
       - target: 8083
         published: 8083
@@ -20,12 +20,12 @@ services:
       - POSTGRES_USER=postgres
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-      - pg_integrador3_data:/var/lib/postgresql/data/pgdata
+      - pg_tendencias_grupo3:/var/lib/postgresql/data/pgdata
     networks:
       - desarrollo_net
 
 volumes:
-  pg_integrador3_data:
+  pg_tendencias_grupo3:
     external: true
 
 networks:

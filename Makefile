@@ -1,8 +1,8 @@
 build-image:
-	@ docker build -f devops/Dockerfile -t backendjava:1 .
+	@ docker build -f devops/Dockerfile -t grupo3java:1 .
 volume:
-	@ docker volume create pg_integrador3_data
+	@ docker volume create pg_tendencias_grupo3
 deploy:
-	@ docker stack deploy --with-registry-auth -c devops/stack.yml backendjava
+	@ docker stack deploy --with-registry-auth -c devops/stack.yml grupo3
 rm:
-	@ docker stack rm backendjava
+	@ docker stack rm grupo3
