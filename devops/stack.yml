@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    image: grupo3java:1
+    image: grupotresjava:1
     ports:
       - target: 8083
         published: 8083

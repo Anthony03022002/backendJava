@@ -1,5 +1,5 @@
 build-image:
-	@ docker build -f devops/Dockerfile -t grupo3java:1 .
+	@ docker build -f devops/Dockerfile -t grupotresjava:1 .
 volume:
 	@ docker volume create pg_tendencias_grupo3
 deploy:
