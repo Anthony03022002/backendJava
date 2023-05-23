@@ -24,7 +24,7 @@
     networks:
       - desarrollo_net
     volumes:
-     integrador:
+     pg_tendencia_data:
       external: true
 
     networks:
