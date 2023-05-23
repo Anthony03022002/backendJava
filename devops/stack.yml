@@ -20,11 +20,11 @@
       - POSTGRES_USER=postgres
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-      - integrador3:/var/lib/postgresql/data/pgdata
+      - pg_integrador3_data:/var/lib/postgresql/data/pgdata
     networks:
       - desarrollo_net
     volumes:
-     integrador3:
+     pg_integrador3_data:
       external: true
 
     networks:
