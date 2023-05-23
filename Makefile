@@ -1,5 +1,5 @@
 build-image:
-	@ docker build -f devops/Dockerfile -t backendjava:1
+	@ docker build -f devops/Dockerfile -t backendjava:1 .
 volume:
 	@ docker volume create pg_tendencia_data
 deploy:
