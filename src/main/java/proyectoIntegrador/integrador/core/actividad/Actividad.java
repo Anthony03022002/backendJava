@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import proyectoIntegrador.integrador.core.documento.Documento;
+import proyectoIntegrador.integrador.core.linea.Linea;
 
 
 
@@ -26,7 +27,7 @@ public class Actividad {
     private Date fechaFinal;
 
     @ManyToOne
-    private Documento documento;
+    private Linea linea;
     
 
     

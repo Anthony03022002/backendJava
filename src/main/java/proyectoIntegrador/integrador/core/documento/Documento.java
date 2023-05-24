@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
+import proyectoIntegrador.integrador.core.actividad.Actividad;
 import proyectoIntegrador.integrador.core.linea.Linea;
 
 
@@ -23,7 +24,7 @@ public class Documento {
     private String antecedente;
     
     @ManyToOne
-    private Linea linea;
+    private Actividad actividad;
 
     
 
