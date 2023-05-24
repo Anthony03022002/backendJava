@@ -6,7 +6,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
+import proyectoIntegrador.integrador.core.documento.Documento;
 
 @Data
 @Entity
@@ -20,4 +22,7 @@ public class Actividad {
     private String nombre;
     private Date fechaInicio;
     private Date fechaFinal;
+
+    @ManyToOne
+    private Documento documento;
 }
