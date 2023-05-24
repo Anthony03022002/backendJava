@@ -17,4 +17,6 @@ public class Programa {
     private long id;
     private String titulo;
     private String carrera;
+    private String responsable;
+    private String estado;
 }

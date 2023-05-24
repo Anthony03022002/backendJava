@@ -20,6 +20,7 @@ public class Documento {
     private String nombre;
     private String justificacion;
     private String antecedente;
+    private String tipodocumento;
 
     
 

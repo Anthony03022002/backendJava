@@ -10,6 +10,7 @@ import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import proyectoIntegrador.integrador.core.documento.Documento;
 
+
 @Data
 @Entity
 
@@ -20,9 +21,13 @@ public class Actividad {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String nombre;
+    private String actividad;
+    private String estado;
     private Date fechaInicio;
     private Date fechaFinal;
 
     @ManyToOne
     private Documento documento;
+
+    
 }
