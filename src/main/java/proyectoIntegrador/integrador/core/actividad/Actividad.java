@@ -25,7 +25,6 @@ public class Actividad {
     private Date fechaInicio;
     private Date fechaFinal;
 
-
     
 
     
