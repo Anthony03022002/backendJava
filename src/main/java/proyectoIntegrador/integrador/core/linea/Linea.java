@@ -12,7 +12,6 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.Data;
-import proyectoIntegrador.integrador.core.Colaborador.Colaborador;
 import proyectoIntegrador.integrador.core.programa.Programa;
 
 @Data
@@ -30,7 +29,7 @@ public class Linea {
     @ManyToOne
     private Programa programa;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "linea_id")
-    private List<Colaborador> colaboradores = new ArrayList<>();
+    // @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    // @JoinColumn(name = "linea_id")
+    // private List<Colaborador> colaboradores = new ArrayList<>();
 }
