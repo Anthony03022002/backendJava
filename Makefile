@@ -5,4 +5,4 @@ volume:
 deploy:
 	@ docker stack deploy --with-registry-auth -c devops/stack.yml grupo3
 rm:
-	@ docker stack rm grupo3
+	@ docker stack rm grupo3	
